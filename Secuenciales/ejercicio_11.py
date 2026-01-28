@@ -1,0 +1,6 @@
+
+print ('Calcular Distancia')
+num_1= int(input("Ingresa el primer numero :) : "))
+num_2= int(input("Ingresa el segundo número :) : "))
+distancia = abs (num_1 - num_2)
+print('Distancia : ', distancia)
