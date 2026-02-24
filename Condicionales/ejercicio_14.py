@@ -5,7 +5,7 @@
 #embarque, considerando lo siguiente: 
 # si es de tipo A, se le cargan 20 centimos al precio inicial cuando es 
 # de tamaño 1; y 30 centimos si es de tamaño 2. 
-# Si es de tipo B, se rebajan 30 centimos cuando es de tama�o 1, y 50 c�ntimos 
+# Si es de tipo B, se rebajan 30 centimos cuando es de tamaño 1, y 50 centimos 
 # cuando es de tamaño 2. 
 #Realice un algoritmo para determinar la ganancia obtenida.
 

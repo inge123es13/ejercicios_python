@@ -2,24 +2,22 @@
 #en caso contrario, el programa termina cuando se introduce un espacio.
 
 
-print(' VocalConsonante')
 
-while True:
-    car = input("Introduce un carácter: ")
+car = ""
+
+while car != " ":
+    car = input("Introduce un carácter (espacio para salir): ")
     
-    # Validar que sea solo un carácter
+    # Verificar que solo sea un carácter
     if len(car) != 1:
-        print("Debes introducir solo un carácter.")
+        print("Por favor, introduce solo un carácter.")
         continue
     
-    # Si es espacio, termina el programa
-    if car == " ":
-        break
-    
-    # Convertimos a mayúscula para comparar
-    if car.upper() in ["A", "E", "I", "O", "U"]:
-        print("VOCAL")
-    else:
-        print("NO VOCAL")
-print('Fin')
+    # Si no es espacio, verificar si es vocal
+    if car != " ":
+        if car.upper() in ["A", "E", "I", "O", "U"]:
+            print("VOCAL")
+        else:
+            print("NO VOCAL")
 
+print("Programa finalizado.")

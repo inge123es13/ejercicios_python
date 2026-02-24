@@ -1,27 +1,23 @@
 
-#Algoritmo que pida caracteres e imprima 'VOCAL' si son vocales y 'NO VOCAL' 
-#en caso contrario, el programa termina cuando se introduce un espacio.
-
-
-
-print(' VocalConsonante')
+# Programa que identifica si un carácter es VOCAL o NO VOCAL
+# Termina cuando se introduce un espacio
 
 while True:
     car = input("Introduce un carácter (espacio para salir): ")
     
+    # Verificar que solo sea un carácter
     if len(car) != 1:
-        print("Debes introducir solo un carácter.")
+        print("Por favor, introduce solo un carácter.")
         continue
     
+    # Si es espacio, termina el programa
     if car == " ":
         print("Programa finalizado.")
         break
     
+    # Verificar si es vocal
     if car.upper() in ["A", "E", "I", "O", "U"]:
         print("VOCAL")
     else:
         print("NO VOCAL")
-
 print("Fin")
-
- 
