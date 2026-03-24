@@ -1,0 +1,23 @@
+
+#Funci�n CalcularFactorial: Recibe un n�mero si el n�mero=1 devuelve que el 
+#factorial es 1, sino acumula el producto del n�mero con el c�lculo del factorial 
+#del numero-1. Es una funci�n recursiva.
+#Par�metros de entrada: n�mero
+#Dato devuelto: Factorial del n�mero
+
+# Función CalcularFactorial
+def calcular_factorial(num):
+    if num == 1:
+        return 1
+    else:
+        return num * calcular_factorial(num - 1)
+
+
+# Programa principal
+def main():
+    numero1 = int(input("Número: "))
+    print("El factorial es:", calcular_factorial(numero1))
+
+
+# Ejecutar programa
+main()
